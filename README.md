@@ -2,12 +2,13 @@
 
 #### 技术描述:
 
-​      SpringBoot +
-​      Semantic UI +
-​      JPA +
-​      Mysql +
-​      elasticsearch 
-​      
+- SpringBoot
+- JPA
+- Elasticsearch
+- Mysql
+- Semantic UI
+
+​	  
 
 ####  前端展示:
 
