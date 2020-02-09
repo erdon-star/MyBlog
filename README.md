@@ -12,10 +12,11 @@
 
 ####  前端展示:
 
-​     ![blog前端展示](https://github.com/erdon-star/MyBlog/blob/master/image/blog前台展示.jpg))
+​     ![blog前端展示](https://github.com/erdon-star/MyBlog/blob/master/image/blog前台展示.jpg)
 
 
 
 ####  后台管理:
 
-​	![blog前端展示](https://github.com/erdon-star/MyBlog/blob/master/image/blog后台管理.jpg))	
+​	![blog前端展示](https://github.com/erdon-star/MyBlog/blob/master/image/blog后台管理.jpg)
+
