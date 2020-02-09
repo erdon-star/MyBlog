@@ -5,7 +5,7 @@
       Semantic UI +
       JPA +
       Mysql +
-      elasticsearch +
+      elasticsearch 
       
      
      
