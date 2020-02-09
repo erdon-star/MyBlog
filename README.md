@@ -18,5 +18,5 @@
 
 ####  后台管理:
 
-​	![blog前端展示](https://github.com/erdon-star/MyBlog/blob/master/image/blog后台管理.jpg)
+​	![blog后台管理](https://github.com/erdon-star/MyBlog/blob/master/image/blog后台管理.jpg)
 
