@@ -4,7 +4,6 @@
 
 - SpringBoot
 - JPA
-- Elasticsearch
 - Mysql
 - Semantic UI
 
