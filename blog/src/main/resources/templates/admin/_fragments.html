@@ -14,10 +14,10 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
-      <h2 class="ui teal header item">管理后台</h2>
-      <a href="#" th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="mini home icon"></i>博客</a>
-      <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini idea icon"></i>分类</a>
-      <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>标签</a>
+      <h2 class="ui teal header item">Control</h2>
+      <a href="#" th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="mini home icon"></i>Blogs</a>
+      <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini idea icon"></i>Types</a>
+      <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>Tags</a>
       <div class="right m-item m-mobile-hide menu">
         <div class="ui dropdown  item">
           <div class="text">
@@ -54,10 +54,12 @@
       </div>
       <div class="three wide column">
         <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
-        <div class="ui inverted link list">
-          <a href="#" class="item m-text-thin">用户故事（User Story）</a>
-          <a href="#" class="item m-text-thin">用户故事（User Story）</a>
-          <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+        <div id="newblog-container">
+           <div class="ui inverted link list" th:fragment="newblogList">
+              <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+              <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+              <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+          </div>
         </div>
       </div>
       <div class="three wide column">
@@ -83,7 +85,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
   <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
-
+  <script>
+      $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+  </script>
 
 </th:block>
 

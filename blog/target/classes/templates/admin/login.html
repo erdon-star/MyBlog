@@ -18,7 +18,7 @@
        <div class="column">
          <h2 class="ui teal image header">
            <div class="content">
-             管理后台登录
+             Blog management
            </div>
          </h2>
          <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
@@ -26,20 +26,20 @@
              <div class="field">
                <div class="ui left icon input">
                  <i class="user icon"></i>
-                 <input type="text" name="username" placeholder="用户名">
+                 <input type="text" name="username" placeholder="username">
                </div>
              </div>
              <div class="field">
                <div class="ui left icon input">
                  <i class="lock icon"></i>
-                 <input type="password" name="password" placeholder="密码">
+                 <input type="password" name="password" placeholder="password">
                </div>
              </div>
-             <button class="ui fluid large teal submit button">登   录</button>
+             <button class="ui fluid large teal submit button">login</button>
            </div>
 
            <div class="ui error mini message"></div>
-           <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用户名和密码错误</div>
+           <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">Wrong user name or password</div>
 
          </form>
 
@@ -60,14 +60,14 @@
         identifier: 'username',
         rules: [{
           type : 'empty',
-          prompt: '请输入用户名'
+          prompt: 'Please input username'
         }]
       },
       password : {
         identifier: 'password',
         rules: [{
           type : 'empty',
-          prompt: '请输入密码'
+          prompt: 'Please input password'
         }]
       }
     }
